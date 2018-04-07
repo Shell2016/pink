@@ -22,8 +22,87 @@
     </header>
 
     <main class="page-main">
+      <section class="gallery">
+        <h2 class="visually-hidden">Фотогалерея</h2>
+        <p class="gallery__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+        <ul class="gallery__list">
+          <li class="gallery__item photo-reply">
+            <img src="http://via.placeholder.com/280x180" alt="фото" class="photo-reply__image">
+            <blockquote>
+              <cite class="photo-reply__author">Анна<span class="photo-reply__time">(5 минут назад)</span></cite>
+              <p class="photo-reply__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <div class="photo-reply__likes likes"><span class="likes__text">Нравится: </span><span class="likes__count">215</span></div>
+            </blockquote>
+          </li>
+          <li class="gallery__item photo-reply">
+            <img src="http://via.placeholder.com/280x180" alt="фото" class="photo-reply__image">
+            <blockquote>
+              <cite class="photo-reply__author">Левон<span class="photo-reply__time">(5 часов назад)</span></cite>
+              <p class="photo-reply__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <div class="photo-reply__likes likes"><span class="likes__text">Нравится: </span><span class="likes__count">356></span></div>
+            </blockquote>
+          </li>
+          <li class="gallery__item photo-reply">
+            <img src="http://via.placeholder.com/280x180" alt="фото" class="photo-reply__image">
+            <blockquote>
+              <cite class="photo-reply__author">Антон<span class="photo-reply__time">(12 часов назад)</span></cite>
+              <p class="photo-reply__comment">Соседи будут рады!</p>
+              <div class="photo-reply__likes likes"><span class="likes__text">Нравится: </span><span class="likes__count">666</span></div>
+            </blockquote>
+          </li>
+          <li class="gallery__item photo-reply">
+            <img src="http://via.placeholder.com/280x180" alt="фото" class="photo-reply__image">
+            <blockquote>
+              <cite class="photo-reply__author">Борис<span class="photo-reply__time">(20 часов назад)</span></cite>
+              <p class="photo-reply__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <div class="photo-reply__likes likes"><span class="likes__text">Нравится: </span><span class="likes__count">215</span></div>
+            </blockquote>
+          </li>
+          <li class="gallery__item photo-reply">
+            <img src="http://via.placeholder.com/280x180" alt="фото" class="photo-reply__image">
+            <blockquote>
+              <cite class="photo-reply__author">Сергей<span class="photo-reply__time">(25 часов назад)</span></cite>
+              <p class="photo-reply__comment">Самая кубанская в мире!</p>
+              <div class="photo-reply__likes likes"><span class="likes__text">Нравится: </span><span class="likes__count">4</span></div>
+            </blockquote>
+          </li>
+          <li class="gallery__item photo-reply">
+            <img src="http://via.placeholder.com/280x180" alt="фото" class="photo-reply__image">
+            <blockquote>
+              <cite class="photo-reply__author">Максим<span class="photo-reply__time">(40 часов назад)</span></cite>
+              <p class="photo-reply__comment">Где снег-то?</p>
+              <div class="photo-reply__likes likes"><span class="likes__text">Нравится: </span><span class="likes__count">150</span></div>
+            </blockquote>
+          </li>
+          <li class="gallery__item photo-reply">
+            <img src="http://via.placeholder.com/280x180" alt="фото" class="photo-reply__image">
+            <blockquote>
+              <cite class="photo-reply__author">Надежда<span class="photo-reply__time">(45 часов назад)</span></cite>
+              <p class="photo-reply__comment">Всем GM и взаимные лайки!</p>
+              <div class="photo-reply__likes likes"><span class="likes__text">Нравится: </span><span class="likes__count">2560</span></div>
+            </blockquote>
+          </li>
+        </ul>
+      </section>
 
-
+      <section class="photo-upload">
+        <h2 class="visually-hidden">Загрузка фотографий</h2>
+        <p class="photo-upload__description">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</p>
+        <img src="http://via.placeholder.com/280x374" alt="Фото, загруженное пользователем" class="photo-upload__image">
+        <div class="photo-upload__filter upload-filter">
+          <div class="upload-filter__icons">
+            <button class="upload-filter__icons upload-filter__icons--sharpness" type="button"><img src="http://via.placeholder.com/40x40" alt="Резкость"></button>
+            <button class="upload-filter__icons upload-filter__icons--color" type="button"><img src="http://via.placeholder.com/40x40" alt="Цвет"></button>
+            <button class="upload-filter__icons upload-filter__icons--contrast" type="button"><img src="http://via.placeholder.com/40x40" alt="Контраст"></button>
+          </div>
+          <div class="upload-filter__range range-bar">
+            <div class="range-bar__scale"></div>
+            <div class="range-bar__toggle"></div>
+          </div>
+          <button class="upload-filter__btn btn upload-filter__btn--post" type="button">Запостить</button>
+          <button class="upload-filter__btn btn upload-filter__btn--reset" type="button">Отмена</button>
+        </div>
+      </section>
     </main>
 
 
