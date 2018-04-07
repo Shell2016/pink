@@ -1,8 +1,4 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
-
-* Студент: [Алексей Симоненко](https://up.htmlacademy.ru/adaptive/13/user/6).
-* Наставник: [Алексей 🐱 Малейков](https://htmlacademy.ru/adaptive/13/user/4839).
-
 ---
 
 **Обратите внимание, что папка с вашими исходными файлами — `source/`.**
