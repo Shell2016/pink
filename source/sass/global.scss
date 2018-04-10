@@ -11,6 +11,10 @@ html {
 body {
   margin: 0;
   padding: 0;
+  min-width: $mobile;
+  font-family: "Open Sans", "Optima", sans-serif;
+  font-size: $font-size;
+  line-height: 1.2 * $font-size;
 
 }
 
@@ -23,7 +27,7 @@ img {
   height: auto;
 }
 
-.1visually-hidden {
+.visually-hidden {
   position: absolute;
 
   width: 1px;
@@ -33,8 +37,20 @@ img {
   overflow: hidden;
 
   white-space: nowrap;
-
   border: 0;
-
   clip: rect(0 0 0 0);
+}
+
+.container {
+  width: $mobile;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media (min-width: $desktop) {
+    width: $desktop;
+  }
 }
