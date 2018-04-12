@@ -13,16 +13,84 @@
 }
 
 .main-nav__toggle {
-    @media (min-width: $desktop) {
-      display: none;
-    }
+  margin: 0;
+  padding: 0;
+  border: 0;
+  margin-right: 20px;
+
+  @media (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.main-nav--closed .main-nav__toggle {
+  width: 50px;
+  height: 24px;
+  background: url("../../img/icon-menu-burger.svg") no-repeat;
+
+  &:hover,
+  &:focus {
+    background: url("../../img/icon-menu-burger-red.svg") no-repeat;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: $mobile-tablet-only) {
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__list {
+    display: block;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__list {
+    display: block;
+  }
+}
+
+
+.main-nav--opened .main-nav__toggle {
+  width: 24px;
+  height: 24px;
+  background: url("../../img/icon-menu-cross.svg") no-repeat;
+
+  &:hover,
+  &:focus {
+    background: url("../../img/icon-menu-cross-red.svg") no-repeat;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+
+
+.main-nav__logo {
+  margin-left: 20px;
 }
 
 .main-nav__top {
   min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px #000000;
 
   @media (min-width: $tablet) {
     min-height: 110px;
+  }
+
+  @media (min-width: $desktop) {
+    box-shadow: none;
   }
 }
 
@@ -33,22 +101,26 @@
 
   @media (min-width: $desktop) {
     display: flex;
-
   }
 }
 
 .main-nav__item {
-  min-height: 63px;
+  min-height: 62px;
+  margin: 1px 0;
   text-align: center;
-  outline: 1px solid green;
+  // outline: 1px solid green;
+  box-shadow: 0 1px #000000,
+              inset 0 1px rgba(255,255,255,0.15);
 
   @media (min-width: $desktop) {
     margin-left: 82px;
     margin-top: 42px;
+    box-shadow: none;
   }
  }
 
 .main-nav__item a {
+  position: relative;
   display: block;
   color: #fff;
   font-size: 18px;
@@ -57,8 +129,16 @@
   min-height: 63px;
   padding-top: 15px;
   text-transform: uppercase;
-  outline: 1px dashed yellow;
+  // outline: 1px dashed yellow;
 
+  &[href]:hover,
+  &[href]:focus {
+    color: #d22856;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $desktop) {
     font-weight: 400;
@@ -66,8 +146,25 @@
     text-transform: none;
     min-height: 0;
     padding: 0;
+
+    &[href]:active {
+      color: #ffffff;
+      opacity: 0.3;
+    }
+
+    &:not([href])::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      background-color: #fff;
+      left: 0;
+      bottom: -10px;
+    }
   }
 }
+
+
 
 
 
