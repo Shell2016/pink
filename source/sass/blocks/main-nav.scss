@@ -28,9 +28,22 @@
   height: 24px;
   background: url("../../img/icon-menu-burger.svg") no-repeat;
 
-  &:hover,
-  &:focus {
+  &:hover {
     background: url("../../img/icon-menu-burger-red.svg") no-repeat;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  width: 24px;
+  height: 24px;
+  background: url("../../img/icon-menu-cross.svg") no-repeat;
+
+  &:hover {
+    background: url("../../img/icon-menu-cross-red.svg") no-repeat;
   }
 
   &:active {
@@ -55,24 +68,6 @@
     display: block;
   }
 }
-
-
-.main-nav--opened .main-nav__toggle {
-  width: 24px;
-  height: 24px;
-  background: url("../../img/icon-menu-cross.svg") no-repeat;
-
-  &:hover,
-  &:focus {
-    background: url("../../img/icon-menu-cross-red.svg") no-repeat;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-}
-
-
 
 .main-nav__logo {
   margin-left: 20px;
