@@ -1,4 +1,5 @@
 .main-nav {
+  background-color: rgba(0,0,0,0.3);
   // width: $mobile;
   // margin: 0 auto;
   // padding: 0 20px;
@@ -51,6 +52,14 @@
   }
 }
 
+.main-nav--opened {
+  background-color: #283645;
+
+  @media (min-width: $desktop) {
+    background-color: rgba(0,0,0,0.3);
+  }
+}
+
 @media (max-width: $mobile-tablet-only) {
   .main-nav--closed .main-nav__list {
     display: none;
@@ -66,6 +75,10 @@
 
   .main-nav--nojs .main-nav__list {
     display: block;
+  }
+
+  .main-nav--closed.main-nav--nojs {
+    background-color: $dark-blue;
   }
 }
 

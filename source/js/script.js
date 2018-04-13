@@ -1,7 +1,10 @@
 var nav = document.querySelector('.main-nav');
 var navToggle = nav.querySelector('.main-nav__toggle');
+var mainHeader = document.querySelector('.main-header');
 
 nav.classList.remove('main-nav--nojs');
+mainHeader.classList.remove('main-header--opened');
+
 
 navToggle.addEventListener('click', function(event) {
   event.preventDefault();
@@ -12,6 +15,7 @@ navToggle.addEventListener('click', function(event) {
     nav.classList.remove('main-nav--opened');
     nav.classList.add('main-nav--closed');
   }
+  mainHeader.classList.toggle('main-header--opened');
 });
 
 
